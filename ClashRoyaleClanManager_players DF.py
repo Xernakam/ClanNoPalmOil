@@ -7,8 +7,9 @@ import calendar
 import datetime
 import xlsxwriter
 import csv
+mykey='insert private API key'
 headers = {
-    'auth': 'b0cab65a56f141d28fb04a4ee29aa8f10230573afbb149f3a6bbf160a68de0a7'
+    'auth': mykey
 }
 
 def getPlayersUrl(players):
