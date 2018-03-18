@@ -72,9 +72,11 @@ def getValues(newDf, lindx):
         # print (validvalues)
         #finaldf=finaldf.append(validvalues)
     return validvalues
+'''
 lindx = ['members']
 validateClanValues=getValues(clanGetValues, lindx)
 print(validateClanValues)
+'''
 
 def getPlayerDF(data, lindx):
     newDf=getDFfromDict(data)
