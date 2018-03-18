@@ -23,7 +23,7 @@ def getDataFromUrl(players):
     #downloading API as .json
     url_list = getPlayersUrl(players)
     headers = {
-    'auth': 'b0cab65a56f141d28fb04a4ee29aa8f10230573afbb149f3a6bbf160a68de0a7'
+    'auth': mykey
     }
     data = [dict() for x in range(0,len(url_list))]
     for i in range(0,len(url_list)):
@@ -32,10 +32,12 @@ def getDataFromUrl(players):
     return data
 #df=pd.DataFrame(dict([(k,pd.Series (v)) for k,v in data.items()]))
 #print(df)
+
+'''
 urlclan='https://api.royaleapi.com/clan/2GRV8JVY'
 responseclan  = requests.request('GET', urlclan, headers=headers)
 dataclan=responseclan.json()
-
+'''
 
 
 
@@ -55,9 +57,10 @@ def getDFfromDict(d):
                 newDf = newDf.append({k : v}, ignore_index=True)
     return newDf
 
-
+'''
 clanGetValues=getDFfromDict(dataclan)
 print(clanGetValues)
+'''
 
 def getValues(newDf, lindx):
     validvalues = []
